@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  expenseclaim:
+    image: ${DOCKER_REGISTRY-}expenseclaim
+    build:
+      context: .
+      dockerfile: ExpenseClaim/Dockerfile
