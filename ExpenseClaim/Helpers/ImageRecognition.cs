@@ -13,7 +13,8 @@ namespace Helper
             {
                 return;
             }
-            using(var engine=new TesseractEngine("./tessdata", "eng",EngineMode.Default))
+
+            using(var engine=new TesseractEngine("tessdata", "eng",EngineMode.Default))
             {
                 using(var pix = Pix.LoadFromMemory(bytedata))
                 {
